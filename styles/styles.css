@@ -43,7 +43,7 @@ aside img {
     width: 200px;
     height: auto;
 }
-
+/*This rule is on ly for the footer*/
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
