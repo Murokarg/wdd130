@@ -9,27 +9,15 @@ body {
     font-family: Roboto, Arial, sans-serif ;
 }
 
-nav {
-    background-color: steelblue;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
 
 h1 {
     color: darkblue;
     padding: .5rem;
+    border-bottom: 1px solid #333;
 }
 
 main img {
-    width: 19rem;
+    width: 11rem;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -42,22 +30,29 @@ p {
     padding: 1rem;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+    
 main {
-    max-width: 50rem;
     grid-column: 2/3;
-    margin: 1rem 0;
-
+    margin: 1rem;
+}
+    
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-h1 {
-    border-bottom: 1px solid #333;
-}
- a {
+a {
     color: #00f;
- }
+}
 
-header, footer .grid {
-    max-width: 840px;
+header, .grid, footer {
+    /*max-width: 840px;*/
     margin: 0 auto;
 }
 
@@ -76,13 +71,6 @@ nav a {
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff; /* shorthand for white and #ffffff; */
-}
-
-aside {
-    max-width: 30rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 aside h2 {
@@ -123,13 +111,6 @@ ul {
     color: #000;
 }
 
-.grid {
-    display: grid;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 .indent {
     padding-left: 2rem;
 }
