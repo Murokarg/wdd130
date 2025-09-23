@@ -30,16 +30,11 @@ p {
     padding: 1rem;
 }
 
-.grid {
-    display: grid;
-    align-items: center;
-}
-    
 main {
     grid-column: 2/3;
     margin: 1rem;
 }
-    
+
 aside {
     width: 20rem;
     position: relative;
@@ -75,14 +70,16 @@ nav a {
 
 aside h2 {
     position: absolute;
-    top: 10px;
-    left: 60px;
+    top: 20px;
+    left: 110px;
 }
 
 
 aside img {
     width: 200px;
     height: auto;
+    position: block;
+    margin-left: 3rem;
 }
 
 /*This rule is on ly for the footer*/
@@ -112,5 +109,10 @@ ul {
 }
 
 .indent {
-    padding-left: 2rem;
+    padding-left: 1rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
