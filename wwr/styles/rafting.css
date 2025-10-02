@@ -1,58 +1,63 @@
 :root {
     --primary-color:#055a05;
-    --secondary-color:#f4a261;
-    --acent1-color: #264653;
+    --secondary-color: #0a8a0a;
+    --accent1-color: #f0f8f0;
     --accent2-color: #e9c46a;
+    --body-color: #1a1818;
+    --heading-color: #333333;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--acent1-color)
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--acent1-color);
+    color: var(--body-color);
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-}
-
-.navigation {
-    display: flex;
-    list-style: none;
-}
-
-.navigation li {
-    flex: 1 1 auto;
-   /* border: 3px solid rgb(0 0 0 / 15%);*/
-}
-
-header, main, footer {
-    width: 840px;
+header,
+main,
+footer {
+    width: 1000px;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
-.hero p {
-    /*margin: 6px;*/
-    padding: 5px 0 25px 0;
+nav,
+p,
+section,
+article {
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 4rem;
+    height: 4rem;
 }
 
 .hero {
     position: relative;
-    display: inline-block;
 }
 
 .hero img {
@@ -61,91 +66,33 @@ h1, h2 {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 20px;
+    top: 4rem;
     width: 100%;
-    padding: 16px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
     text-align: center;
-    opacity: .7;
-    background-color: var(--acent1-color);
-    color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
 .hero article img {
     float: right;
-    width: 90px;
-    border: 0;
-    margin: 0;
-    box-shadow: 1px;
-    padding-top: 10px;
+    width: 125px;
+    margin: 0 0 0 1rem;
 }
 
-.hero article {
-    position: relative;
-    top: -140px;
-    text-align: center;
-    opacity: .7;
-    background-color: var(--acent1-color);
-    color: #fff;
-}
 
-h2 {
-    background-color: var(--acent1-color);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
 
-.history-grid {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
 
-.text-left, .text-right {
-    flex: 1;
-    padding: 10px;
-}
-
-.history-image {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.history-image img {
-    max-width: 100%;
-    height: auto;
-    padding-top: 25px;
-}
-
-.adventures-grid {
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.adventures-caption {
-    text-align: center;
-
-}
-
-.socialmedia a {
-    width: 50px;
-    height: auto;
-    display: inline-block;
-    text-decoration: none;
-}
-
-footer {
-    font-size: .7rem;
-    border-top: 1px solid rgb(0 0 0 / 15%);
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    text-align: center;
-    margin-top: 20px;
-
-}
 
