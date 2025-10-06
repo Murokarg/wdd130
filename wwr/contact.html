@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A site for a rafting company that includes their history, location, prices and packages, etc.">
+        content="A contact page for White Water Rafting, with a contact page and geolocation info.">
     <meta name="author" content="Edwin Rene Rodriguez Ortiz">
-    <title>White Water Rafting</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -24,31 +24,67 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/rafting16-1024.jpg" alt="photo taken from the top showing a rafting crew in a river">
-            <h1>White Water Rafting</h1>
-            <article>
-                <img src="images/rafting12-1024-hero.jpg" alt="A person enjoying rafting">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex expedita laboriosam, nesciunt aut omnis
-                    dolores beatae quas? Autem officiis repellat aperiam! Nisi eius minima quia tempora dolores. Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur maxime unde beatae iste delectus!
-                    Totam quasi adipisci, tempore earum perferendis culpa, est vitae explicabo voluptatibus odio eius
-                    vero ea! Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
+        <div class="contact">
+            <h1>White Water Rafting Company</h1>
+            <h4>123 Main River Street</h4>
+            <h4>Kolob, California</h4>
+            <h4>+1 999 999 9999</h4>
+            <h4>info@whitewaterrafting.com</h4>
         </div>
-        <section class="history">
-            <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, odio ipsum id molestias quasi
-                voluptas
-                nostrum ipsa vero ad reiciendis minus qui voluptatem saepe fugiat perspiciatis atque hic
-                delectus
-                natus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aliquid dignissimos quos nihil
-                rerum.</p>
+        <section class="contact-form">
+            <form action="">
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"><br>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail"><br>
+                </div>
+                <div class="message-purpose">
+                    <label for="message">Message Purpose</label>
+                </div>
+                <div>
+                    <input type="radio" name="message" id="inquiry" value="General Inquiry">
+                    <label for="inquiry">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" name="message" id="reservation" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" name="message" id="suggestion" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Type Here"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <div>
+                    <button type="submit">Get in Touch!</button>
+                </div>
         </section>
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
+        <section class="employees">
+            <h2>We Are Here To Serve You</h2>
+            <figure>
+                <img src="images/employee1-150.jpg" alt="">
+                <figcaption>Profile 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2-150.jpg" alt="">
+                <figcaption>Profile 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="">
+                <figcaption>Profile 3</figcaption>
+            </figure>
+
         </section>
+
     </main>
     <footer>
         <p>&copy; - 2025 White Water Rafting | ^_^ Edwin Rene Rodríguez Ortiz ^_^ </p>

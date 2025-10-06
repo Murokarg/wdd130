@@ -57,7 +57,7 @@ nav a:hover {
 header,
 main,
 footer {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -73,6 +73,11 @@ section,
 article {
     margin: 1rem;
     padding: .5rem;
+}
+
+.contact {
+    display: block;
+    text-align: center;
 }
 
 .socialmedia a {
@@ -146,12 +151,18 @@ article {
     gap: 2rem 1rem;
 }
 
-.adventures h2 {
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+}
+
+.adventures, .employees h2 {
     grid-column: 1 / -1;
     justify-self: center;
 }
 
-.adventures figure {
+.adventures, .employees figure {
     border: 2px solid var(--secondary-color);
     padding: .5rem;
     background-color: var(--white);
