@@ -45,7 +45,6 @@ nav a {
     font-weight: bold;
     padding: 1rem;
     list-style: none;
-
 }
 
 nav a:hover {
@@ -71,7 +70,7 @@ nav,
 p,
 section,
 article {
-    margin: 1rem;
+    margin: 1rem; 
     padding: .5rem;
 }
 
@@ -84,9 +83,9 @@ form {
     min-width: 400px;
     margin: 0 auto;
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
+    /*border: 1px solid rgb(0 0 0 / 0.1);*/
     border-radius: 0.5rem;
-    background-color: #eee;
+    /*background-color: #eee;*/
     display: grid;
 }
 
@@ -106,12 +105,13 @@ textarea {
 .message-purpose{
     grid-template-columns: 1fr 1fr;
     display: grid;
-    text-align: right;
+    text-align: center;
     padding: 2px ;
 }
 
-.message-purpose label {
-    display: rowspan 4;
+
+.message {
+    text-align: center;
 }
 
 textarea {
@@ -150,8 +150,7 @@ button {
 }
 
 .map {
-    display: grid;
-    min-width: 400px;
+    display: inline;
 }
 
 .socialmedia a {
@@ -243,7 +242,7 @@ button {
 }
 
 footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--primary-color);
     color: var(--white);
     display: grid;
     grid-template-columns: 3fr 1fr;
