@@ -241,6 +241,62 @@ button {
     background-color: var(--white);
 }
 
+/* ===== TRIPS PAGE ===== */
+.trips-intro {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.trip-cards {
+    display: grid;
+    gap: 2rem;
+    margin: 0 1rem 2rem;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--accent1-color);
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.btn:hover {
+    background-color: var(--accent2-color);
+    color: var(--body-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .trip-card {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== TRIPS PAGE ===== */
+
 footer {
     background-color: var(--primary-color);
     color: var(--white);
